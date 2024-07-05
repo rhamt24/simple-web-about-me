@@ -1,0 +1,160 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #111;
+    color: #fff;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+.left-panel {
+    flex: 1;
+    background-color: #77dbed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+}
+
+.left-panel .video-loop {
+    max-width: 80%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.right-panel {
+    flex: 1;
+    background-color: #111;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+}
+
+.right-panel h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.right-panel h1 span {
+    color: #77dbed;
+    transition: color 0.3s ease;
+}
+
+.right-panel p {
+    margin-bottom: 20px;
+    font-size: 1.2em;
+}
+
+.button {
+    padding: 10px 20px;
+    background-color: #77dbed;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #77dbed;
+}
+
+.mode-button {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    padding: 10px;
+    background-color: #77dbed;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    /* Membuat tombol berbentuk bulat */
+    cursor: pointer;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mode-icon {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    /* Membuat ikon gambar berbentuk bulat */
+}
+
+.menu-button {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    padding: 10px;
+    background-color: #77dbed;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    /* Membuat tombol berbentuk bulat */
+    cursor: pointer;
+    z-index: 1000;
+    font-size: 24px;
+}
+
+.menu {
+    display: none;
+    position: fixed;
+    top: 50px;
+    left: 10px;
+    background-color: #77dbed;
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 1000;
+}
+
+.menu a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 0;
+    font-size: 18px;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}
+
+/* Light Mode Styles */
+body.light-mode {
+    background-color: #fff;
+    color: #000;
+}
+
+body.light-mode .left-panel {
+    background-color: #ffc0cb;
+}
+
+body.light-mode .right-panel {
+    background-color: #fff;
+}
+
+body.light-mode .right-panel h1 span {
+    color: #ffc0cb;
+}
+
+body.light-mode .button {
+    background-color: #ffc0cb;
+}
+
+body.light-mode .button:hover {
+    background-color: #ffb6c1;
+}
+
+body.light-mode .mode-button,
+body.light-mode .menu-button,
+body.light-mode .menu {
+    background-color: #ffc0cb;
+}
