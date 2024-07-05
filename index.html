@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ifung Tech</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="left-panel">
+            <video class="video-loop" autoplay loop muted>
+                <source src="https://telegra.ph/file/892016a043d3b14865ad3.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="right-panel" id="slide1">
+            <h1>Hai, saya <span>Zals</h1>
+            <p>Seorang Pengembang Bot dan Web Amatir.</p>
+            <p>Saya Pemilik Bot Zhu. Saya suka membuat situs web yang indah dan bermanfaat bagi orang lain. Bahasa yang
+                saya tahu sedikit adalah JS, HTML dan CSS.</p>
+            <a href="#" class="button">Segera hadir</a>
+        </div>
+        <div class="right-panel" id="slide2" style="display:none;">
+            <h1>Karya Saya</h1>
+            <p>Berikut adalah beberapa proyek yang telah saya kerjakan:</p>
+            <ul>
+                <li>Bot WhatsApp Multi Device</li>
+                <li>Bot Telegram/li>
+                <li>Rest Api</li>
+                <li>Simple Web</li>
+            </ul>
+        </div>
+        <div class="right-panel" id="slide3" style="display:none;">
+            <h1>Layanan</h1>
+            <p>Saya menawarkan layanan berikut:</p>
+            <ul>
+                <li>Sewa Bot</li>
+                <li>Sewa Jadi Bot</li>
+                <li>Custom Bot</li>
+                <li>Script Bot</li>
+            </ul>
+        </div>
+    </div>
+
+    <button id="mode-toggle" class="mode-button">
+        <img src="https://telegra.ph/file/c3d801f047b2ce0567e89.jpg" alt="Switch Mode" class="mode-icon">
+    </button>
+    <button id="menu-toggle" class="menu-button">&#9776;</button>
+    <div id="menu" class="menu">
+        <a href="#slide1" onclick="showSlide(1)">Tentang Saya</a>
+        <a href="#slide2" onclick="showSlide(2)">Karya Saya</a>
+        <a href="#slide3" onclick="showSlide(3)">Layanan</a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+          </html>
